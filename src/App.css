@@ -166,8 +166,8 @@ input{
 /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
   .card_cantainer {
-    width: 90%;
-    padding: 30px;
+    width: 350px;
+    height: 650px;
   }
 
   .search {
