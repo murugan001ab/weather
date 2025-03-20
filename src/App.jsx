@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import './App.css'
 
@@ -93,6 +93,10 @@ function App() {
     }
 
   }
+  useEffect(()=>{
+    getApi();
+  }
+  ,[]);
 
   const keyHandle=(e)=>{
     if(e.key=="Enter"){
@@ -105,7 +109,7 @@ function App() {
     <div className=" card_cantainer">
       <div className='search'>  
           <input type="text" name='search' placeholder='Search city' onChange={cityhandler} onKeyDown={keyHandle} value={text} />
-          <img src="weather.png" onClick={()=>getApi()} alt="" />
+          <img className='' src="weather.png" onClick={()=>getApi()} alt="" />
       </div>
       <div className="details">
       <img src={icon} className='image' alt="" />
