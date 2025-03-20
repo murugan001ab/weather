@@ -165,9 +165,12 @@ input{
 
 /* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
+  body{
+    height: 100vh;
+  }
   .card_cantainer {
     width: 350px;
-    height: 650px;
+    height: 700px;
   }
 
   .search {
@@ -177,12 +180,12 @@ input{
 
   input {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .search img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
   }
 
   .image {
@@ -218,12 +221,16 @@ input{
 
 /* Mobile (max-width: 480px) */
 @media (max-width: 480px) {
- 
+  .card_cantainer {
+    width: 350px;
+    height: 600px;
+  }
 
   input {
     font-size: 16px;
     text-align: left;
     overflow: hidden;
+    
   }
 
   .search img {
